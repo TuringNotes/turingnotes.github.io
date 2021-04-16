@@ -288,7 +288,7 @@ ul, ol{
     --initialDepth: 30px;
     margin-left: var(--initialDepth);
     width: fit-content;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     &.depth-1{
         margin-left: calc( var(--initialDepth) + ( 1 * var(--nestDepth) ) );
