@@ -1,12 +1,13 @@
 # TuringNotes Blog
 
 ## Instructions to create an article
-- Create a directory with the name of the article.
+- Create a directory, inside the topic directory, with the name of the article.
 - Make sure the name of the directory doesn't include spaces or any special character except '-'.
 - Eg:
     -  If the article is "Introduction to Rough Sets", name the directory something like "intro-to-rough-sets".
 
 ```bash
+    cd rough-computing
     mkdir intro-to-rough-sets
     cd intro-to-rough-sets
 ```
