@@ -64,7 +64,7 @@ body
     .metadata
     {
         // border: 1px solid yellow;
-
+        margin-bottom: 50px
         div
         {
             margin: 10px;
@@ -244,6 +244,7 @@ body
     // border: 1px solid red;
     
     .article-card{
+        display: block;
         position: relative;
         padding: 20px;
         height:140px;
@@ -253,6 +254,7 @@ body
         border-radius: 10px;
         box-shadow: 1px 1px 5px rgb(213, 213, 213);
         margin: 10px;
+        text-decoration: none;
         // border: 1px solid red;
 
         .author-name{
@@ -263,8 +265,18 @@ body
             // border: 1px solid red;
         }
 
+        .date{
+            font-size: 10px;
+            margin-left: auto;
+            width: fit-content;
+        }
+
         &:nth-of-type(2n){
             margin-left: auto;
+        }
+
+        &:visited{
+            color: inherit;
         }
     }
 }
