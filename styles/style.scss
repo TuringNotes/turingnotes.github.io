@@ -322,3 +322,38 @@ ul, ol{
         margin-left: calc( var(--initialDepth) + ( 10 * var(--nestDepth) ) );
     }
 }
+
+@media screen and (max-width: 850px){
+    .article{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .article{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .navbar{
+        a{
+            font-size: 11px;
+        }
+        .nav-items{
+            .nav-item{
+                margin: 5px;
+            }
+        }
+    }
+
+    .author{
+        .pic{
+            width: 40px;
+            height: 40px;
+        }
+        .name{
+            font-size: 12px;
+        }
+    }
+}
