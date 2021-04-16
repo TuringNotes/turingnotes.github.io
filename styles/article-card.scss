@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+}
+
+.cards{
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgb(228, 228, 228);
+    padding: 30px;
+    // border: 1px solid red;
+    
+    .article-card{
+        position: relative;
+        padding: 20px;
+        height:140px;
+        width: 500px;
+        font-family: 'Cascadia Code';
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px rgb(213, 213, 213);
+        margin: 10px;
+        // border: 1px solid red;
+
+        .author-name{
+            position: absolute;
+            width: fit-content;
+            bottom: 25px;
+            right: 25px;
+            // border: 1px solid red;
+        }
+
+        &:nth-of-type(2n){
+            margin-left: auto;
+        }
+    }
+}
