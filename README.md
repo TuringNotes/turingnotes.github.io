@@ -61,20 +61,22 @@
                 ...
 ```
 
-### CSS Class Names
+### CSS Selectors
 ```yml
-    Article  : (.article)
-    Metadata  : (.metadata)
-    Heading  : (.heading [type(1-5)])
-    Caption  : (.caption)
-    Author  : (.author)
-    Picture  : (.pic)
-    Name  : (.name)
-    Social-Media-links  : (.links)
-    Github  : (.github > a)
-    Linkedin  : (.linkedin > a)
-    Contents  : (.contents)
-    Section  : (.section)
-    Image  : (.image > img)
-    Text  : (p)
+    Article  : .article
+    Metadata  : .metadata
+    Heading  : .heading[.type(1-5)]
+    Caption  : .caption
+    Author  : .author
+    Picture  : .pic
+    Name  : .name
+    Social-Media-links  : .links
+    Github  : .github > a
+    Linkedin  : .linkedin > a
+    Contents  : .contents
+    Section  : .section
+    Image  : .image > img
+    Text  : p
+    ul: ul[.depth(1-10)]
+    ol: ol[.depth(1-10)]
 ```
