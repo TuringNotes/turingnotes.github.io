@@ -282,3 +282,43 @@ body
         }
     }
 }
+
+ul, ol{
+    --nestDepth: 10px;
+    --initialDepth: 30px;
+    margin-left: var(--initialDepth);
+    width: fit-content;
+    border: 1px solid red;
+
+    &.depth-1{
+        margin-left: calc( var(--initialDepth) + ( 1 * var(--nestDepth) ) );
+    }
+
+    &.depth-2{
+        margin-left: calc( var(--initialDepth) + ( 2 * var(--nestDepth) ) );
+    }
+    &.depth-3{
+        margin-left: calc( var(--initialDepth) + ( 3 * var(--nestDepth) ) );
+    }
+    &.depth-4{
+        margin-left: calc( var(--initialDepth) + ( 4 * var(--nestDepth) ) );
+    }
+    &.depth-5{
+        margin-left: calc( var(--initialDepth) + ( 5 * var(--nestDepth) ) );
+    }
+    &.depth-6{
+        margin-left: calc( var(--initialDepth) + ( 6 * var(--nestDepth) ) );
+    }
+    &.depth-7{
+        margin-left: calc( var(--initialDepth) + ( 7 * var(--nestDepth) ) );
+    }
+    &.depth-8{
+        margin-left: calc( var(--initialDepth) + ( 8 * var(--nestDepth) ) );
+    }
+    &.depth-9{
+        margin-left: calc( var(--initialDepth) + ( 9 * var(--nestDepth) ) );
+    }
+    &.depth-10{
+        margin-left: calc( var(--initialDepth) + ( 10 * var(--nestDepth) ) );
+    }
+}
