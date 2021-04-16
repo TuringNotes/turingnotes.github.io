@@ -16,6 +16,12 @@
 ```
 - You may copy the contents template.html file to speed up the process.
 
+### Styles and Scripts Provider
+```html
+    <link rel="stylesheet" href="https://raw.githack.com/TuringNotes/turingnotes.github.io/main/styles/style.min.css">
+    <script src="https://raw.githack.com/TuringNotes/turingnotes.github.io/main/js/scripts.js" defer></script>
+```
+
 ### Structure of the Article
 ```yml
     Article
