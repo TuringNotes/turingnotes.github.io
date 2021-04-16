@@ -1,9 +1,17 @@
-const ENV = "dev"
-
+function detectENV() {
+    let protocol = window.location.href.split(":")[0]
+    // console.log(protocol)
+    if (protocol == "http") {
+        return "dev"
+    }
+    return ""
+}
 
 async function getNavBarContent() {
-    let url
-    if (ENV == "dev") {
+    let url, ENV
+    ENV = detectENV()
+    // console.log({ ENV })
+    if (ENV === "dev") {
         url = 'http://127.0.0.1:5500/turingnotes.github.io/nav-bar.html';
     } else {
         url = 'https://turingnotes.github.io/nav-bar.html';
