@@ -1,3 +1,6 @@
+const authorBox = document.querySelector('.author')
+
+
 function detectENV() {
     let protocol = window.location.href.split(":")[0]
     // console.log(protocol)
@@ -32,4 +35,16 @@ async function includeHeader() {
     docBody.prepend(navBarDiv)
 }
 
+function adjustAuthorBox(e) {
+    console.log(window.innerWidth)
+    if (window.innerWidth < 1090) {
+        if (!(authorBox.classList.contains('inline'))) {
+            authorBox.classList.add('inline')
+        }
+    }
+}
+
+window.addEventListener('resize', adjustAuthorBox)
+
 includeHeader()
+adjustAuthorBox()
