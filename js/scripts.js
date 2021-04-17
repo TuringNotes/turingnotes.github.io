@@ -1,4 +1,5 @@
 const authorBox = document.querySelector('.author')
+const articleCards = document.querySelectorAll('.article-card')
 
 
 function detectENV() {
@@ -36,7 +37,10 @@ async function includeHeader() {
 }
 
 function adjustAuthorBox(e) {
-    console.log(window.innerWidth)
+    if (!authorBox) {
+        return
+    }
+    // console.log(window.innerWidth)
     if (window.innerWidth < 1090) {
         if (!(authorBox.classList.contains('inline'))) {
             authorBox.classList.add('inline')
@@ -44,7 +48,30 @@ function adjustAuthorBox(e) {
     }
 }
 
-window.addEventListener('resize', adjustAuthorBox)
+function adjustArticleCards() {
+    if ((!articleCards) || (articleCards.length == 0)) {
+        return
+    }
+
+    articleCards.forEach(function (card) {
+        let cardHeading = card.querySelector('.heading')
+        console.log(cardHeading)
+        if (cardHeading.classList.contains('type-1')) {
+            cardHeading.classList.remove('type-1')
+        } else if (cardHeading.classList.contains('type-2')) {
+            cardHeading.classList.remove('type-2')
+        }
+
+        cardHeading.classList.add('type-4')
+    })
+}
+
+function makeAdjustments(e) {
+    adjustAuthorBox(e)
+}
+
+window.addEventListener('resize', makeAdjustments)
 
 includeHeader()
-adjustAuthorBox()
+makeAdjustments()
+adjustArticleCards()

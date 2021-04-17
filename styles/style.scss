@@ -374,3 +374,29 @@ ul, ol{
         }
     }
 }
+
+@media screen and (max-width: 830px){
+    .cards{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .cards{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .cards{
+        .article-card{
+            width: 300px;
+
+            .author-name{
+                bottom: 7px;
+                right: 7px;
+                font-size: 11px;
+            }
+        }
+    }
+}
