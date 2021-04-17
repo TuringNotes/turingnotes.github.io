@@ -11,7 +11,7 @@
 body
 {
     height: 100vh;
-    font-family:'Cascadia Code', 'Nunito', 'Monospace';
+    font-family: 'Monospace';
     // background-color: rgb(245, 245, 245);
 }
 
@@ -120,6 +120,7 @@ body
     font-size: var(--fontSize);
     text-transform: capitalize;
     margin: 10px 0 15px 0;
+    font-family: 'Cascadia Code';
     // border: 1px solid black;
 
     &.type-1
@@ -149,6 +150,22 @@ body
         font-size: calc( 3 * var(--fontSize) / 5 );
         color: grey;
         // border: 1px solid red;
+    }
+}
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    flex-wrap: wrap;
+
+    .tag{
+        background: rgb(204, 204, 204);
+        padding: 5px 10px;
+        border-radius: 15px;
+        margin: 3px 2px;
+        text-decoration: none;
+        color: black;
     }
 }
 
