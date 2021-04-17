@@ -29,6 +29,8 @@
         Metadata
             Heading
                 Caption
+            Tags
+                Tag
             Author
                 Picture
                 Name
@@ -67,6 +69,8 @@
     Metadata  : .metadata
     Heading  : .heading[.type(1-5)]
     Caption  : .caption
+    Tags: .tags
+    Tag: a.tag
     Author  : .author
     Picture  : .pic
     Name  : .name
